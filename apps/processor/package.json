@@ -1,0 +1,22 @@
+{
+  "name": "processor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx esbuild ./src/index.ts --bundle --platform=node --outfile=dist/index.js",
+    "start": "node dist/index.js",
+    "dev": "npm run build && npm run start"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.5.0",
+    "@repo/db": "*",
+    "@types/express": "^4.17.21",
+    "esbuild": "^0.25.9",
+    "express": "^4.19.1",
+    "kafkajs": "^2.2.4"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
